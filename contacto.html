@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ElPedaler</title>
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.jpg" alt="">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><button class="">Nuestras Bicicletas</button>
+            <ul>
+              <li><a href="bicMon.html">Bicicletas de Montaña</a></li>
+              <li><a href="bicRut.html">Bicicletas de Ruta</a></li>
+              <li><a href="bicUrb.html">Bicicletas Urbanas</a></li>
+            </ul>
+          </li>
+          <li><a href="pregFre.html">Preguntas Frecuentes</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <section id="form">
+        <form class="" action="index.html" method="post" enctype="application/x-www-form-urlencoded">
+          <label for="nombAp">Nombre y Apellido:</label>
+          <input type="text" name="nombAp" value=""><br>
+          <label for="email">Email:</label>
+          <input type="email" name="email" value=""><br>
+          <label for="noticias">Quiero que me avisen cuando entre una bici nueva</label>
+          <input type="radio" name="noticias" value=""><br>
+          <label for="capital">¿Vivís en capital?</label>
+          <select class="" name="capital">
+            <option value="S">Sí</option>
+            <option value="N">No</option>
+          </select><br>
+          <label for="comentario">Deje aquí su comentario:</label><br>
+          <textarea name="comentario" rows="8" cols="80"></textarea><br>
+          <input type="reset" name="reset" value="Limpiar Formulario">
+          <input type="submit" name="submit" value="Enviar Comentario">
+        </form>
+      </section>
+    </div>
+    <footer>
+      <p>Contáctese</p>
+      <p>ipsum@ipsum.com</p>
+      <p>Nuestro Local</p>
+      <p>Pte. Tte. Gral. Juan Domingo Perón 2437, Balvanera, Ciudad Autónoma de Buenos Aires</p>
+    </footer>
+  </body>
+</html>
