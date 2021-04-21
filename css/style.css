@@ -1,9 +1,31 @@
 /* GENERAL E INDEX */
+html {
+  font-size: 100%;
+  font-family: 'Montserrat',sans-serif;
+}
 body {
   background-color: #141414;
-  color: #eeeeee;
-  font-family: sans-serif;
+  color: #eeeeee; /* rgb(238, 238, 238) */
+}
+nav a{
+  color: inherit;
+  text-decoration-line: none;
 }
 h1,h2,.producto_h3 {
+  color: #c9ef73; /* rgb(201, 239, 115) */
+}
+ul#menu {
+  list-style: none;
+}
+#producto_main {
+  width: 480px;
+  height: 320px;
+}
+.producto_img {
+  width: 210px;
+  height: 140px;
+}
+th p{
   color: #c9ef73;
+  font-weight:900;
 }
