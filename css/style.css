@@ -5,17 +5,55 @@ html {
 }
 body {
   background-color: #141414;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
   color: #eeeeee; /* rgb(238, 238, 238) */
 }
-nav a{
+header {
+  position: sticky;
+}
+.container {
+  text-align: center;
+}
+nav {
+  background-color: #141414;
+  position: absolute;
+  top: 158px;
+  left: 197px;
+  padding: 10px;
+}
+nav ul#menu{
+  list-style: none;
+  display: inline;
+  overflow: hidden;
+  padding: 10px;
+  font-size: 0px;
+}
+ul#menu li{
+  display: inline-block;
+  font-size: 16px;
+  padding-right: 50px;
+}
+ul#menu ul{
+  position: absolute;
+  display: none;
+}
+ul#menu ul li {
+  display: block;
+}
+ul#menu li:hover ul {
+  display: block;
+  position: relative;
+  left: 10px;
+}
+li a{
+  text-decoration: none;
   color: inherit;
-  text-decoration-line: none;
+  display: inline;
+  padding: 10px;
 }
 h1,h2,.producto_h3 {
   color: #c9ef73; /* rgb(201, 239, 115) */
-}
-ul#menu {
-  list-style: none;
 }
 #producto_main {
   width: 480px;
@@ -28,4 +66,8 @@ ul#menu {
 th p{
   color: #c9ef73;
   font-weight:900;
+}
+table {
+  position: relative;
+  left: 350px;
 }
