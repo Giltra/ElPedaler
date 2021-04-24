@@ -15,6 +15,7 @@ header {
 .container {
   text-align: center;
 }
+/* ESTILOS DE NAVBAR */
 nav {
   background-color: #141414;
   position: absolute;
@@ -22,26 +23,26 @@ nav {
   left: 197px;
   padding: 10px;
 }
-nav ul#menu{
+nav #menu{
   list-style: none;
   display: inline;
   overflow: hidden;
   padding: 10px;
   font-size: 0px;
 }
-ul#menu li{
+#menu li{
   display: inline-block;
   font-size: 16px;
   padding-right: 50px;
 }
-ul#menu ul{
+#menu ul{
   position: absolute;
   display: none;
 }
-ul#menu ul li {
+#menu ul li {
   display: block;
 }
-ul#menu li:hover ul {
+#menu li:hover ul {
   display: block;
   position: relative;
   left: 10px;
@@ -52,12 +53,24 @@ li a{
   display: inline;
   padding: 10px;
 }
+/* CUERPO PRINCIPAL INDEX */
 h1,h2,.producto_h3 {
   color: #c9ef73; /* rgb(201, 239, 115) */
 }
-#producto_main {
+#productoMain {
   width: 480px;
   height: 320px;
+}
+#muestraProd article {
+  display: inline-block;
+  border-style: double;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px;
+}
+#muestraProd article a {
+  text-decoration: none;
+  color: inherit;
 }
 .producto_img {
   width: 210px;
@@ -70,4 +83,34 @@ th p{
 table {
   position: relative;
   left: 350px;
+}
+/* FOOTER */
+footer {
+  position: relative;
+  left: 160px;
+}
+div.line {
+  padding-top: 50px;
+  border-bottom-style: dotted;
+  width: 1600px;
+}
+/* CONTACTO */
+section#form {
+  text-align: justify;
+  line-height: 1.6;
+  display: inline-block;
+  border-radius: 5px;
+  border-style: double;
+  padding: 20px;
+  padding-top: 10px;
+  margin-top: 50px;
+}
+section#form h1{
+  position: relative;
+  bottom: 10px;
+  text-align: center;
+}
+input#email {
+  position: relative;
+  left: 104px;
 }

@@ -11,7 +11,7 @@
 </head>
   <body>
     <header>
-      <img src="img/logo.jpg" alt="">
+      <a href="index.html"><img src="img/logo.jpg" alt=""></a>
       <nav>
         <ul id="menu">
           <li><a href="index.html">Home</a></li>
@@ -27,84 +27,92 @@
         </ul>
       </nav>
     </header>
-    <div class="container">
+    <main class="container">
       <h1>Bicicletería ElPedaler</h1>
       <h3><i>"Una nueva forma de transportarse"</i></h3>
-      <section id="main_title">
+      <!-- TITULO Y DESTACADO -->
+      <section id="mainTitle">
         <div class="">
         <h2>Destacado de la Semana</h2>
         <h3>Bicicleta Bulls, rod 29, suspensión delantera, 21 velocidades</h3>
-        <img id="producto_main" src="img/main.jpg" alt="">
+        <img id="productoMain" src="img/main.jpg" alt="">
         </div>
       </section>
-      <section id="main_body">
-        <article class="">
-          <div class="">
+      <!-- MUESTRA DE PRODUCTOS -->
+      <div id="mainBody">
+        <section id="muestraProd">
+          <article>
             <h2>Bicicletas de Montaña</h2>
-            <img class="producto_img" src="img/BicMon.jpg" alt="">
-          </div>
-        <div class="">
-          <h2>Bicicletas de Ruta</h2>
-          <img class="producto_img" src="img/BicCar.jpg" alt="">
-          </div>
-        <div class="">
-          <h2>Bicicletas Urbanas</h2>
-          <img class="producto_img" src="img/BicUrba.jpg" a  lt="">
-        </div>
-      </article>
-      <article id="table">
-        <h2>¿En qué se diferencian los tipos de bici?</h2>
-        <table border="3" cellpadding="5" cellspacing="0">
-          <tr>
-            <th><p>Tipo</p></th>
-            <th><p>Características</p></th>
-            <th><p>Recomendaciones</p></th>
-          </tr>
-          <tr>
-            <td>Ruta</td>
-            <td><ul>
-              <li>Diseño ligero y fino</li>
-              <li>Orientada a la velocidad</li>
-              <li>Ruedas altas y delgadas</li>
-            </ul></td>
-            <td><ul>
-              <li>Son más utilizadas para ciclismo</li>
-              <li>El diseño fuerza una postura más agachada que podría llegar a ser incómoda</li>
-            </ul></td>
-          </tr>
-          <tr>
-            <td>Montaña</td>
-            <td><ul>
-              <li>Resistentes</li>
-              <li>Orientada a terrenos difíciles</li>
-              <li>Ruedas anchas con más agarre</li>
-            </ul></td>
-            <td><ul>
-              <li>Menos chances de derrapar</li>
-              <li>Buena comodidad debido a la suspensión</li>
-              <li>Son más pesadas que las de ruta</li>
-            </ul></td>
-          </tr>
-          <tr>
-            <td>Urbana</td>
-            <td><ul>
-              <li>Resistentes</li>
-              <li>Orientada a la ciudad</li>
-              <li>Generalmente tienen luz delantera y parrilla</li>
-            </ul></td>
-            <td><ul>
-              <li>Ideales para pasear, o para trabajar</li>
-              <li>Generalmente cuentan con una velocidad</li>
-            </ul></td>
-          </tr>
-        </table>
-      </article>
-      <article id="video">
-        <iframe width="480" height="320" src="https://www.youtube.com/embed/l7cymgMZgDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </article>
-    </section>
-    </div>
+            <img class="producto_img" src="img/BicMon.jpg" alt=""><br>
+            <a href="bicMon.html">Ver</a>
+          </article>
+          <article>
+            <h2>Bicicletas de Ruta</h2>
+            <img class="producto_img" src="img/BicCar.jpg" alt=""><br>
+            <a href="bicRut.html">Ver</a>
+          </article>
+          <article>
+            <h2>Bicicletas Urbanas</h2>
+            <img class="producto_img" src="img/BicUrba.jpg" a  lt=""><br>
+            <a href="bicUrb.html">Ver</a>
+          </article>
+        </section>
+       <!-- TABLA -->
+        <section id="table">
+          <h2>¿En qué se diferencian los tipos de bici?</h2>
+          <table border="3" cellpadding="5" cellspacing="0">
+            <tr>
+              <th><p>Tipo</p></th>
+              <th><p>Características</p></th>
+              <th><p>Recomendaciones</p></th>
+            </tr>
+            <tr>
+              <td>Ruta</td>
+              <td><ul>
+                <li>Diseño ligero y fino</li>
+                <li>Orientada a la velocidad</li>
+                <li>Ruedas altas y delgadas</li>
+              </ul></td>
+              <td><ul>
+                <li>Son más utilizadas para ciclismo</li>
+                <li>El diseño fuerza una postura más agachada que podría llegar a ser incómoda</li>
+              </ul></td>
+            </tr>
+            <tr>
+              <td>Montaña</td>
+              <td><ul>
+                <li>Resistentes</li>
+                <li>Orientada a terrenos difíciles</li>
+                <li>Ruedas anchas con más agarre</li>
+              </ul></td>
+              <td><ul>
+                <li>Menos chances de derrapar</li>
+                <li>Buena comodidad debido a la suspensión</li>
+                <li>Son más pesadas que las de ruta</li>
+              </ul></td>
+            </tr>
+            <tr>
+              <td>Urbana</td>
+              <td><ul>
+                <li>Resistentes</li>
+                <li>Orientada a la ciudad</li>
+                <li>Generalmente tienen luz delantera y parrilla</li>
+              </ul></td>
+              <td><ul>
+                <li>Ideales para pasear, o para trabajar</li>
+                <li>Generalmente cuentan con una velocidad</li>
+              </ul></td>
+            </tr>
+          </table>
+       </section>
+       <!-- VIDEO -->
+       <section id="video">
+         <iframe width="480" height="320" src="https://www.youtube.com/embed/l7cymgMZgDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       </section>
+     </div>
+   </main>
     <footer>
+      <div class="line"></div>
       <p>Contáctese</p>
       <p>ipsum@ipsum.com</p>
       <p>Nuestro Local</p>

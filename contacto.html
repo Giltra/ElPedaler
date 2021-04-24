@@ -11,7 +11,8 @@
 </head>
   <body>
     <header>
-      <img src="img/logo.jpg" alt="">
+      <a href="index.html"><img src="img/logo.jpg" alt=""></a>
+      <!-- BARRA DE NAVEGACION -->
       <nav>
         <ul id="menu">
           <li><a href="index.html">Home</a></li>
@@ -27,14 +28,15 @@
         </ul>
       </nav>
     </header>
-    <div class="container">
+    <!-- CONTENIDO -->
+    <main class="container">
       <section id="form">
         <h1>Contactanos</h1>
         <form class="" action="index.html" method="post" enctype="application/x-www-form-urlencoded">
           <label for="nombAp">Nombre y Apellido:</label>
           <input type="text" name="nombAp" value=""><br>
           <label for="email">Email:</label>
-          <input type="email" name="email" value=""><br>
+          <input id="email" type="email" name="email" value=""><br>
           <label for="noticias">Quiero que me avisen cuando entre una bici nueva</label>
           <input type="radio" name="noticias" value=""><br>
           <label for="capital">¿Vivís en capital?</label>
@@ -48,8 +50,9 @@
           <input type="submit" name="submit" value="Enviar Comentario">
         </form>
       </section>
-    </div>
+    </main>
     <footer>
+      <div class="line"></div>
       <p>Contáctese</p>
       <p>ipsum@ipsum.com</p>
       <p>Nuestro Local</p>
