@@ -7,7 +7,7 @@ body {
   background-color: #141414;
   background-image: url("../img/background.jpg");
   background-size: cover;
-  color: #eeeeee; /* rgb(238, 238, 238) */
+  color: #ffffff; /* rgb(238, 238, 238) */
 }
 header {
   position: sticky;
@@ -19,33 +19,45 @@ header {
 nav {
   background-color: #141414;
   position: absolute;
-  top: 158px;
-  left: 197px;
+  top: 135px;
+  margin: auto;
+  margin-left: 197px;
   padding: 10px;
+  width: 100vw;
+  border-bottom: groove;
+  text-align: justify;
 }
-nav #menu{
+nav .menu{
   list-style: none;
-  display: inline;
-  overflow: hidden;
   padding: 10px;
   font-size: 0px;
+  position: relative;
+  overflow: hidden;
 }
-#menu li{
+nav .menu li{
   display: inline-block;
   font-size: 16px;
   padding-right: 50px;
 }
-#menu ul{
+nav .menu ul{
   position: absolute;
   display: none;
 }
-#menu ul li {
-  display: block;
+nav .menu ul li {
+  position: relative;
+  display: list-item;
 }
-#menu li:hover ul {
+
+nav .menu li:hover ul {
+  background-color: rgba(0,0,0,0.0);
   display: block;
   position: relative;
-  left: 10px;
+  right: 10px;
+}
+nav .menu li ul li {
+  display: table;
+  position: relative;
+  padding: 25px 15px;
 }
 li a{
   text-decoration: none;
@@ -76,20 +88,21 @@ h1,h2,.producto_h3 {
   width: 210px;
   height: 140px;
 }
-th p{
-  color: #c9ef73;
-  font-weight:900;
-}
 table {
   position: relative;
   left: 350px;
+  text-align: left;
+}
+th p{
+  color: #c9ef73;
+  font-weight:900;
 }
 /* FOOTER */
 footer {
   position: relative;
   left: 160px;
 }
-div.line {
+div .line {
   padding-top: 50px;
   border-bottom-style: dotted;
   width: 1600px;
