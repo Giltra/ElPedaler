@@ -20,11 +20,12 @@ nav {
   background-color: #141414;
   position: absolute;
   top: 135px;
-  margin: auto;
   margin-left: 197px;
   padding: 10px;
   width: 100vw;
-  border-bottom: groove;
+  height: 40px;
+  border-bottom: groove 1px;
+  border-color: #c9ef73;
   text-align: justify;
 }
 nav .menu{
@@ -39,6 +40,12 @@ nav .menu li{
   font-size: 16px;
   padding-right: 50px;
 }
+nav .menu li a{
+  text-decoration: none;
+  color: inherit;
+  display: inline;
+  padding: 10px;
+}
 nav .menu ul{
   position: absolute;
   display: none;
@@ -47,40 +54,45 @@ nav .menu ul li {
   position: relative;
   display: list-item;
 }
-
-nav .menu li:hover ul {
-  background-color: rgba(0,0,0,0.0);
+/* LO QUE PASA CUANDO HAGO HOVER */
+nav .menu .drpBtn:hover {
+  padding: 0px;
+  position: relative;
+}
+nav .menu li:hover .drop {
+  color: #141414;
+  background-color: #eeeeee;
+  padding: 0px;
+  margin: 0px;
   display: block;
   position: relative;
-  right: 10px;
+  right: 55px;
+  top: 22px;
 }
-nav .menu li ul li {
+nav .menu li .drop li {
   display: table;
-  position: relative;
+  text-align: justify;
+  width: 198px;
   padding: 25px 15px;
-}
-li a{
-  text-decoration: none;
-  color: inherit;
-  display: inline;
-  padding: 10px;
+  border: groove 1px;
+  border-color: #eeeeee;
 }
 /* CUERPO PRINCIPAL INDEX */
 h1,h2,.producto_h3 {
   color: #c9ef73; /* rgb(201, 239, 115) */
 }
-#productoMain {
+.productoMain {
   width: 480px;
   height: 320px;
 }
-#muestraProd article {
+.muestraProd article {
   display: inline-block;
   border-style: double;
   border-radius: 10px;
   padding: 30px;
   margin: 30px;
 }
-#muestraProd article a {
+.muestraProd article a {
   text-decoration: none;
   color: inherit;
 }
