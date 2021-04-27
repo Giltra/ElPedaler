@@ -39,6 +39,8 @@ nav .menu li{
   display: inline-block;
   font-size: 16px;
   padding-right: 50px;
+  padding-left: 50px;
+  margin-left: 0px;
 }
 nav .menu li a{
   text-decoration: none;
@@ -56,18 +58,18 @@ nav .menu ul li {
 }
 /* LO QUE PASA CUANDO HAGO HOVER */
 nav .menu .drpBtn:hover {
-  padding: 0px;
+  margin-right: -8px;
+  padding-right: 0px;
   position: relative;
 }
 nav .menu li:hover .drop {
   color: #141414;
   background-color: #eeeeee;
-  padding: 0px;
-  margin: 0px;
   display: block;
   position: relative;
   right: 55px;
   top: 22px;
+  padding-left: 0px;
 }
 nav .menu li .drop li {
   display: table;
@@ -96,7 +98,7 @@ h1,h2,.producto_h3 {
   text-decoration: none;
   color: inherit;
 }
-.producto_img {
+.productoImg {
   width: 210px;
   height: 140px;
 }
@@ -114,10 +116,35 @@ footer {
   position: relative;
   left: 160px;
 }
-div .line {
+.line {
   padding-top: 50px;
-  border-bottom-style: dotted;
+  border-bottom: groove 1px;
   width: 1600px;
+}
+/* NUESTRAS BICICLETAS */
+.producto {
+  display: inline-block;
+  width: 25vw;
+  border: solid 1px;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px;
+}
+.producto a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  top: 13px;
+}
+/* PREGUNTAS FRECUENTES */
+.pregFre {
+  text-align: left;
+}
+.pregunta {
+  padding: 15px;
+  border: solid 1px;
+  border-radius: 10px;
+  margin-top: 15px;
 }
 /* CONTACTO */
 section#form {
