@@ -1,21 +1,28 @@
 /* GENERAL E INDEX */
+
 html {
   font-size: 100%;
   font-family: 'Montserrat',sans-serif;
 }
+
 body {
   background-color: #141414;
-  background-image: url("../img/background.jpg");
-  background-size: cover;
+  background-image: url("../img/background_end.jpg");
+  background-size: 100% 100%;
   color: #ffffff; /* rgb(238, 238, 238) */
 }
+
 header {
   position: sticky;
+  z-index: 1000;
 }
+
 .container {
   text-align: center;
 }
+
 /* ESTILOS DE NAVBAR */
+
 nav {
   background-color: #141414;
   position: absolute;
@@ -28,6 +35,7 @@ nav {
   border-color: #c9ef73;
   text-align: justify;
 }
+
 nav .menu{
   list-style: none;
   padding: 10px;
@@ -35,6 +43,7 @@ nav .menu{
   position: relative;
   overflow: hidden;
 }
+
 nav .menu li{
   display: inline-block;
   font-size: 16px;
@@ -42,26 +51,32 @@ nav .menu li{
   padding-left: 50px;
   margin-left: 0px;
 }
+
 nav .menu li a{
   text-decoration: none;
   color: inherit;
   display: inline;
   padding: 10px;
 }
+
 nav .menu ul{
   position: absolute;
   display: none;
 }
+
 nav .menu ul li {
   position: relative;
   display: list-item;
 }
+
 /* LO QUE PASA CUANDO HAGO HOVER */
+
 nav .menu .drpBtn:hover {
   margin-right: -8px;
   padding-right: 0px;
   position: relative;
 }
+
 nav .menu li:hover .drop {
   color: #141414;
   background-color: #eeeeee;
@@ -71,6 +86,7 @@ nav .menu li:hover .drop {
   top: 22px;
   padding-left: 0px;
 }
+
 nav .menu li .drop li {
   display: table;
   text-align: justify;
@@ -79,51 +95,72 @@ nav .menu li .drop li {
   border: groove 1px;
   border-color: #eeeeee;
 }
+
 /* CUERPO PRINCIPAL INDEX */
+
 h1,h2,.producto_h3 {
   color: #c9ef73; /* rgb(201, 239, 115) */
 }
+
 .productoMain {
   width: 480px;
   height: 320px;
 }
+
+.muestraProd {
+  display: flex;
+  justify-content: center;
+}
+
 .muestraProd article {
-  display: inline-block;
   border-style: double;
   border-radius: 10px;
   padding: 30px;
   margin: 30px;
 }
+
 .muestraProd article a {
   text-decoration: none;
   color: inherit;
+  position: relative;
+  top: 12px;
 }
+
 .productoImg {
   width: 210px;
   height: 140px;
 }
+
 table {
   position: relative;
   left: 350px;
   text-align: left;
 }
+
 th p{
   color: #c9ef73;
   font-weight:900;
 }
+
 /* FOOTER */
+
 footer {
   position: relative;
   left: 160px;
 }
+
 .line {
   padding-top: 50px;
   border-bottom: groove 1px;
   width: 1600px;
 }
 /* NUESTRAS BICICLETAS */
+.bicProductos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 .producto {
-  display: inline-block;
   width: 25vw;
   border: solid 1px;
   border-radius: 10px;
@@ -165,4 +202,8 @@ section#form h1{
 input#email {
   position: relative;
   left: 104px;
+}
+/* MEDIA QUERIES */
+@media only screen and (min-width:768) {
+
 }
