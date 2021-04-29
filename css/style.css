@@ -29,7 +29,7 @@ nav {
   top: 135px;
   margin-left: 197px;
   padding: 10px;
-  width: 100vw;
+  width: 80vw;
   height: 40px;
   border-bottom: groove 1px;
   border-color: #c9ef73;
@@ -37,6 +37,8 @@ nav {
 }
 
 nav .menu{
+  display: flex;
+  justify-content: space-around;
   list-style: none;
   padding: 10px;
   font-size: 0px;
@@ -131,9 +133,13 @@ h1,h2,.producto_h3 {
   height: 140px;
 }
 
+.table {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 table {
   position: relative;
-  left: 350px;
   text-align: left;
 }
 
@@ -175,6 +181,9 @@ footer {
 }
 /* PREGUNTAS FRECUENTES */
 .pregFre {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   text-align: left;
 }
 .pregunta {
