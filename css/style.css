@@ -144,7 +144,7 @@ h1,h2,.producto_h3 {
   border-radius: 10px;
   padding: 15px;
   margin: 15px;
-  width: 80vw;
+  width: 250px;
   transition: transform 1s;
 }
 
@@ -201,18 +201,17 @@ footer {
 
 /* NUESTRAS BICICLETAS */
 .bicProductos {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-flow: column nowrap;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
 }
 
 .producto {
-  width: 65vw;
+  width: 235px;
   border: solid 1px;
   border-radius: 10px;
   padding: 30px;
   margin: 30px;
+  height: 245px;
   transition: transform 1s;
 }
 
@@ -281,8 +280,8 @@ textarea {
     "header header"
     "main main"
     "footer footer";
-    grid-template-columns: 50vw 50vw;
-    grid-template-rows: 132px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 132px auto 200px;
   }
 
   .logo {
@@ -304,15 +303,27 @@ textarea {
     margin-right: -10px;
   }
 
+  /* CUERPO PRINCIPAL INDEX */
+  .muestraProd article {
+    width: 330px;
+    height: 255px;
+  }
+
+  /* TABLA Y IFRAME */
+  iframe {
+    width: 480px;
+    height: 320px;
+  }
+
   /* NUESTRAS BICICLETAS */
   .bicProductos {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3, 1fr);
   }
 
   .producto {
-    width: 30vw;
+    width: 230px;
+    height: 315px;
   }
 
   /* CONTACTO */
@@ -334,7 +345,7 @@ textarea {
     "header header header header"
     "main main main main"
     "footer footer footer footer";
-    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 200px auto 200px;
   }
 
@@ -418,13 +429,6 @@ textarea {
     width: 320px;
   }
 
-  /* TABLA Y IFRAME */
-
-  iframe {
-    width: 480px;
-    height: 320px;
-  }
-
   /* FOOTER */
 
   footer {
@@ -438,9 +442,16 @@ textarea {
   }
 
   /* NUESTRAS BICICLETAS */
-
+  .bicProductos {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    width: 90%;
+    margin-left: 50px;
+  }
   .producto {
-    width: 25vw;
+    width: 20vw;
+    height: 260px;
   }
 
   /* PREGUNTAS FRECUENTES */
