@@ -1,5 +1,4 @@
 /* GENERAL E INDEX */
-
 html {
   font-size: 75%;
   font-family: 'Montserrat',sans-serif;
@@ -8,11 +7,10 @@ html {
 body {
   display: grid;
   grid-template-areas:
-  "header header"
-  "main main"
-  "footer footer";
+  "header"
+  "main"
+  "footer";
   grid-template-rows: 66px auto 100px;
-  grid-template-columns: 50vw 50vw;
   background-color: #141414;
   background-image: url("../img/background_end.jpg");
   background-size: 100% 100%;
@@ -43,10 +41,9 @@ main {
 }
 
 /* ESTILOS DE NAVBAR */
-
 nav {
   position: absolute;
-  background-color: rgb(14, 14, 14, 0.5);
+  background-image: linear-gradient(to bottom, #141414, #c9ef73 700%);
   width: 80vw;
   height: 30px;
   text-align: left;
@@ -89,6 +86,10 @@ nav {
 }
 
 /* LO QUE PASA CUANDO HAGO HOVER */
+.menu .drpBtn {
+  height: 30px;
+  transition: height 1s;
+}
 
 .menu .drpBtn:hover {
   margin-right: -43px;
@@ -104,21 +105,24 @@ nav {
   display: block;
   position: relative;
   right: 55px;
-  top: 10px;
+  top: 7px;
   padding-left: 0px;
-  width: 230px;
+  width: 208px;
 }
 
 .menu li .drop li {
   display: table;
   text-align: justify;
-  width: auto;
+  width: 198px;
   padding: 15px 5px;
   border-color: #eeeeee;
 }
 
-/* CUERPO PRINCIPAL INDEX */
+.menu li .drop li:hover {
+  background-color: #dddddd;
+}
 
+/* CUERPO PRINCIPAL INDEX */
 h1,h2,.producto_h3 {
   color: #c9ef73; /* rgb(201, 239, 115) */
 }
@@ -126,6 +130,7 @@ h1,h2,.producto_h3 {
 .productoMain {
   width: 270px;
   height: 180px;
+  border-radius: 10px;
 }
 
 .muestraProd {
@@ -140,6 +145,11 @@ h1,h2,.producto_h3 {
   padding: 15px;
   margin: 15px;
   width: 80vw;
+  transition: transform 1s;
+}
+
+.muestraProd article:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .muestraProd article a {
@@ -152,7 +162,9 @@ h1,h2,.producto_h3 {
 .productoImg {
   width: 210px;
   height: 140px;
+  border-radius: 10px;
 }
+
  /* TABLA Y IFRAME */
 .table {
   display: flex;
@@ -176,7 +188,6 @@ iframe {
 }
 
 /* FOOTER */
-
 footer {
   grid-area: footer;
   width: 80vw;
@@ -189,7 +200,6 @@ footer {
 }
 
 /* NUESTRAS BICICLETAS */
-
 .bicProductos {
   display: flex;
   justify-content: flex-start;
@@ -198,11 +208,16 @@ footer {
 }
 
 .producto {
-  width: 75vw;
+  width: 65vw;
   border: solid 1px;
   border-radius: 10px;
   padding: 30px;
   margin: 30px;
+  transition: transform 1s;
+}
+
+.producto:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .producto a {
@@ -213,7 +228,6 @@ footer {
 }
 
 /* PREGUNTAS FRECUENTES */
-
 .pregFre {
   display: flex;
   flex-direction: column;
@@ -229,7 +243,6 @@ footer {
 }
 
 /* CONTACTO */
-
 section#form {
   text-align: justify;
   line-height: 1.6;
@@ -256,32 +269,79 @@ textarea {
   width: 280px;
 }
 
-/* MEDIA QUERIES */
-
-@media only screen and (min-width:1024px)
+/* MEDIA QUERY TABLET */
+@media only screen and (min-width:768px)
 {
   html {
     font-size: 100%;
   }
 
   body {
-    display: flex;
-    flex-direction: column;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 132px;
   }
 
-  header {
-    position: sticky;
-    z-index: 1000;
+  .logo {
+    width: 132px;
+    height: 132px;
+  }
+
+  /* ESTILOS DE NAVBAR */
+  nav {
+    height: 36px;
+  }
+
+  .menu .drpBtn:hover .drop {
+    top: 10px;
+  }
+
+  .menu li{
+    font-size: 14px;
+    margin-right: -10px;
+  }
+
+  /* NUESTRAS BICICLETAS */
+  .bicProductos {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+
+  .producto {
+    width: 30vw;
+  }
+
+  /* CONTACTO */
+  input#email {
+    left: 104px;
+  }
+
+  textarea {
+    width: 600px;
+  }
+}
+
+/* MEDIA QUERY DESKTOP */
+@media only screen and (min-width:1024px)
+{
+
+  body {
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: 200px auto 200px;
   }
 
   .logo {
     width: 198px;
     height: 198px;
     float: none;
-  }
-
-  .container {
-    text-align: center;
   }
   /* ESTILOS DE NAVBAR */
 
@@ -305,10 +365,7 @@ textarea {
   .menu li{
     display: inline-block;
     font-size: 16px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding: 0px 50px;
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -332,12 +389,14 @@ textarea {
     right: 20px;
     top: 22px;
     padding-left: 0px;
+    width: 230px;
   }
 
   .menu li .drop li {
     padding: 25px 15px;
     border: groove 1px;
     border-color: #eeeeee;
+    width: 198px;
   }
 
   /* CUERPO PRINCIPAL INDEX */
@@ -380,12 +439,6 @@ textarea {
 
   /* NUESTRAS BICICLETAS */
 
-  .bicProductos {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-  }
-
   .producto {
     width: 25vw;
   }
@@ -404,11 +457,6 @@ textarea {
     padding: 20px;
     padding-top: 10px;
     width: 60vw;
-  }
-
-  input#email {
-    position: relative;
-    left: 104px;
   }
 
   textarea {
