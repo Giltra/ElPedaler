@@ -1,10 +1,10 @@
 /* GENERAL E INDEX */
 html {
   font-size: 75%;
-  font-family: 'Montserrat',sans-serif;
 }
 
 body {
+  font-family: 'Montserrat',sans-serif;
   display: grid;
   grid-template-areas:
   "header"
@@ -12,8 +12,8 @@ body {
   "footer";
   grid-template-rows: 66px auto 100px;
   background-color: #141414;
-  background-image: url("../img/background_end.jpg");
-  background-size: 100% 100%;
+  background-image: url("../img/background_cave.jpg");
+  background-size: 100% 300%;
   color: #ffffff; /* rgb(238, 238, 238) */
   height: 100vh;
   margin: 0 auto;
@@ -105,9 +105,9 @@ nav {
   display: block;
   position: relative;
   right: 55px;
-  top: 7px;
+  top: 2px;
   padding-left: 0px;
-  width: 208px;
+  width: 198px;
 }
 
 .menu li .drop li {
@@ -123,7 +123,7 @@ nav {
 }
 
 /* CUERPO PRINCIPAL INDEX */
-h1,h2,.producto_h3 {
+h3,h2,.producto_h5 {
   color: #c9ef73; /* rgb(201, 239, 115) */
 }
 
@@ -144,7 +144,6 @@ h1,h2,.producto_h3 {
   border-radius: 10px;
   padding: 15px;
   margin: 15px;
-  width: 250px;
   transition: transform 1s;
 }
 
@@ -175,6 +174,7 @@ h1,h2,.producto_h3 {
 table {
   position: relative;
   text-align: left;
+  color: #eeeeee;
 }
 
 th p{
@@ -203,15 +203,16 @@ footer {
 .bicProductos {
   display: grid;
   grid-template-rows: repeat(6, 1fr);
+  justify-items: center;
 }
 
 .producto {
-  width: 235px;
+  width: 280px;
   border: solid 1px;
   border-radius: 10px;
   padding: 30px;
   margin: 30px;
-  height: 245px;
+  height: 280px;
   transition: transform 1s;
 }
 
@@ -250,7 +251,6 @@ section#form {
   border-style: double;
   padding: 10px;
   margin-top: 50px;
-  width: 80vw;
 }
 
 section#form h1{
@@ -282,6 +282,7 @@ textarea {
     "footer footer";
     grid-template-columns: 50% 50%;
     grid-template-rows: 132px auto 200px;
+    background-size: 100% 250%;
   }
 
   .logo {
@@ -296,17 +297,12 @@ textarea {
 
   .menu .drpBtn:hover .drop {
     top: 10px;
+    top: -2px;
   }
 
   .menu li{
     font-size: 14px;
     margin-right: -10px;
-  }
-
-  /* CUERPO PRINCIPAL INDEX */
-  .muestraProd article {
-    width: 330px;
-    height: 255px;
   }
 
   /* TABLA Y IFRAME */
@@ -322,8 +318,8 @@ textarea {
   }
 
   .producto {
-    width: 230px;
-    height: 315px;
+    width: 270px;
+    height: 370px;
   }
 
   /* CONTACTO */
@@ -332,7 +328,7 @@ textarea {
   }
 
   textarea {
-    width: 600px;
+    width: 550px;
   }
 }
 
@@ -347,6 +343,7 @@ textarea {
     "footer footer footer footer";
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 200px auto 200px;
+    background-size: 100% 200%;
   }
 
   .logo {
@@ -361,7 +358,7 @@ textarea {
     padding: 10px;
     margin-left: 197px;
     width: 80vw;
-    height: 40px;
+    height: 60px;
   }
 
   .menu{
@@ -388,7 +385,7 @@ textarea {
   /* LO QUE PASA CUANDO HAGO HOVER */
 
   .menu .drpBtn:hover {
-    margin-right: -114px;
+    margin-right: -64px;
     padding-right: 0px;
     position: relative;
     width: 260px;
@@ -398,7 +395,7 @@ textarea {
   .menu .drpBtn:hover .drop {
     position: relative;
     right: 20px;
-    top: 22px;
+    top: 16px;
     padding-left: 0px;
     width: 230px;
   }
@@ -407,7 +404,7 @@ textarea {
     padding: 25px 15px;
     border: groove 1px;
     border-color: #eeeeee;
-    width: 198px;
+    width: 230px;
   }
 
   /* CUERPO PRINCIPAL INDEX */
@@ -426,7 +423,6 @@ textarea {
   .muestraProd article {
     padding: 30px;
     margin: 30px;
-    width: 320px;
   }
 
   /* FOOTER */
@@ -445,13 +441,11 @@ textarea {
   .bicProductos {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
-    width: 90%;
-    margin-left: 50px;
   }
+
   .producto {
     width: 20vw;
-    height: 260px;
+    height: 320px;
   }
 
   /* PREGUNTAS FRECUENTES */
@@ -468,9 +462,5 @@ textarea {
     padding: 20px;
     padding-top: 10px;
     width: 60vw;
-  }
-
-  textarea {
-    width: 800px;
   }
 }
