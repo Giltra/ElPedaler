@@ -38,92 +38,11 @@ header {
 
 main {
   grid-area: main;
-}
-
-/* ESTILOS DE NAVBAR */
-nav {
-  position: absolute;
-  background-image: linear-gradient(to bottom, #141414, #c9ef73 700%);
-  width: 80vw;
-  height: 30px;
-  text-align: left;
-  border-bottom: groove 1px;
-  border-color: #c9ef73;
-}
-
-.menu{
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-flow: row nowrap;
-  list-style: none;
-  font-size: 0px;
-  position: relative;
-  overflow: hidden;
-  padding-left: 0px;
-}
-
-.menu li{
-  display: inline-block;
-  font-size: 12px;
-  margin: 0px;
-  padding: 10px 0px;
-}
-
-.menu li a{
-  text-decoration: none;
-  color: inherit;
-  display: inline;
-}
-
-.menu ul{
-  display: none;
-}
-
-.menu ul li {
-  position: relative;
-  display: list-item;
-}
-
-/* LO QUE PASA CUANDO HAGO HOVER */
-.menu .drpBtn {
-  height: 30px;
-  transition: height 1s;
-}
-
-.menu .drpBtn:hover {
-  margin-right: -43px;
-  padding-right: 0px;
-  position: relative;
-  width: 100px;
-  height: 168px;
-}
-
-.menu .drpBtn:hover .drop {
-  color: #141414;
-  background-color: #eeeeee;
-  display: block;
-  position: relative;
-  right: 55px;
-  top: 2px;
-  padding-left: 0px;
-  width: 198px;
-}
-
-.menu li .drop li {
-  display: table;
-  text-align: justify;
-  width: 198px;
-  padding: 15px 5px;
-  border-color: #eeeeee;
-}
-
-.menu li .drop li:hover {
-  background-color: #dddddd;
+  margin-top: 30px;
 }
 
 /* CUERPO PRINCIPAL INDEX */
-h3,h2,.producto_h5 {
+h3,h2,.productos_h4,.producto_h5 {
   color: #c9ef73; /* rgb(201, 239, 115) */
 }
 
@@ -135,33 +54,27 @@ h3,h2,.producto_h5 {
 
 .muestraProd {
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: 50px;
 }
 
-.muestraProd article {
-  border-style: double;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 15px;
-  transition: transform 1s;
+.carousel-item {
+  width: 300px;
+  height: 300px;
 }
 
-.muestraProd article:hover {
-  transform: scale(1.1, 1.1);
+.carousel-arrow {
+  bottom: 100px;
 }
 
-.muestraProd article a {
+.carousel-caption {
+  bottom: 100px;
+}
+
+.carousel-inner a {
   text-decoration: none;
   color: inherit;
-  position: relative;
-  top: 12px;
-}
-
-.productoImg {
-  width: 210px;
-  height: 140px;
-  border-radius: 10px;
 }
 
  /* TABLA Y IFRAME */
@@ -214,6 +127,12 @@ footer {
   margin: 30px;
   height: 280px;
   transition: transform 1s;
+}
+
+.productoImg {
+  width: 210px;
+  height: 140px;
+  border-radius: 10px;
 }
 
 .producto:hover {
@@ -290,20 +209,25 @@ textarea {
     height: 132px;
   }
 
-  /* ESTILOS DE NAVBAR */
-  nav {
-    height: 36px;
+  /* CUERPO PRINCIPAL E INDEX */
+
+  .muestraProd {
+    margin-bottom: -100px;
   }
 
-  .menu .drpBtn:hover .drop {
-    top: 10px;
-    top: -2px;
+  .carousel-item {
+    width: 600px;
+    height: 600px;
   }
 
-  .menu li{
-    font-size: 14px;
-    margin-right: -10px;
+  .carousel-arrow {
+    bottom: 182px;
   }
+
+  .carousel-caption {
+    bottom: 182px;
+  }
+
 
   /* TABLA Y IFRAME */
   iframe {
@@ -350,61 +274,18 @@ textarea {
     width: 198px;
     height: 198px;
     float: none;
+    z-index: 1000;
   }
+
   /* ESTILOS DE NAVBAR */
-
   nav {
-    top: 135px;
-    padding: 10px;
-    margin-left: 197px;
-    width: 80vw;
-    height: 60px;
+    bottom: 60px;
+    z-index: 900;
+    margin-left: 198px;
   }
 
-  .menu{
-    display: flex;
-    flex-flow: row nowrap;
-    padding: 10px;
-    font-size: 0px;
-    position: relative;
-    align-items: stretch;
-  }
-
-  .menu li{
-    display: inline-block;
-    font-size: 16px;
-    padding: 0px 50px;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  .menu li a{
-    padding: 10px;
-  }
-
-  /* LO QUE PASA CUANDO HAGO HOVER */
-
-  .menu .drpBtn:hover {
-    margin-right: -64px;
-    padding-right: 0px;
-    position: relative;
-    width: 260px;
-    height: 300px;
-  }
-
-  .menu .drpBtn:hover .drop {
-    position: relative;
-    right: 20px;
-    top: 16px;
-    padding-left: 0px;
-    width: 230px;
-  }
-
-  .menu li .drop li {
-    padding: 25px 15px;
-    border: groove 1px;
-    border-color: #eeeeee;
-    width: 230px;
+  li.nav-item {
+    padding: 0 50px;
   }
 
   /* CUERPO PRINCIPAL INDEX */
@@ -415,15 +296,22 @@ textarea {
   }
 
   .muestraProd {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+    margin-bottom: -150px;
   }
 
-  .muestraProd article {
-    padding: 30px;
-    margin: 30px;
+  .carousel-item {
+    width: 800px;
+    height: 800px;
   }
+
+  .carousel-arrow {
+    bottom: 250px;
+  }
+
+  .carousel-caption {
+    bottom: 250px;
+  }
+
 
   /* FOOTER */
 

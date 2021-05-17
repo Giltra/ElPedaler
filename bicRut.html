@@ -14,24 +14,52 @@
     <header>
       <a href="index.html"><img class="logo" src="img/logo.jpg" alt=""></a>
       <!-- BARRA DE NAVEGACION -->
-      <nav>
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li class="drpBtn">
-            <a href="#">Bicicletas</a>
-            <ul class="drop">
-              <li><a href="bicMon.html">Bicicletas de Montaña</a></li>
-              <li><a href="bicRut.html">Bicicletas de Ruta</a></li>
-              <li><a href="bicUrb.html">Bicicletas Urbanas</a></li>
-            </ul>
-          </li>
-          <li><a href="pregFre.html">FAQ</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-custom" style="background-color: #c9ef73;">
+        <div class="container">
+        <!-- BOTON DE DESPLIEGUE DE NAV -->
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarExpand"
+          aria-controls="navbarExpand"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- CONTENIDO NAV -->
+        <div class=" navbar-collapse collapse" id="navbarExpand">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <!-- DROP -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Bicicletas
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="bicMon.html">Bicicletas de Montaña</a></li>
+                  <li><a class="dropdown-item" href="bicRut.html">Bicicletas de Ruta</a></li>
+                  <li><a class="dropdown-item" href="bicUrb.html">Bicicletas Urbanas</a></li>
+                </ul>
+            </li>
+            <!-- FIN DROP -->
+            <li class="nav-item">
+              <a class="nav-link" href="pregFre.html">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
       </nav>
     </header>
     <!-- CONTENIDO -->
     <main class="container">
+      <h3>Bicicletas de Ruta</h3>
       <section class="bicProductos">
         <article class="producto">
           <h5 class= "producto_h5">Bicicleta Epoca roja, rod 29, asiento ajustable, 21 velocidades, Ruta</h3>
@@ -72,6 +100,8 @@
       <p>Nuestro Local</p>
       <p>Pte. Tte. Gral. Juan Domingo Perón 2437, Balvanera, Ciudad Autónoma de Buenos Aires</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
 </html>
