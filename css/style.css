@@ -1,354 +1,233 @@
-/* GENERAL E INDEX */
 html {
-  font-size: 75%;
-}
+  font-size: 75%; }
+  @media only screen and (min-width: 768px) {
+    html {
+      font-size: 100%; } }
 
 body {
   font-family: 'Montserrat',sans-serif;
   display: grid;
-  grid-template-areas:
-  "header"
-  "main"
-  "footer";
+  grid-template-areas: "header" "main" "footer";
   grid-template-rows: 66px auto 100px;
   background-color: #141414;
   background-image: url("../img/background_cave.jpg");
   background-size: 100% 300%;
-  color: #ffffff; /* rgb(238, 238, 238) */
+  color: #eeeeee;
+  /* rgb(238, 238, 238) */
   height: 100vh;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
+  @media only screen and (min-width: 768px) {
+    body {
+      grid-template-areas: "header header" "main main" "footer footer";
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 132px auto 200px;
+      background-size: 100% 250%; } }
+  @media only screen and (min-width: 1024px) {
+    body {
+      grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: 200px auto 200px;
+      background-size: 100% 200%; } }
 
-header {
+h3, h2, .productos_h4, .producto_h5 {
+  color: #c9ef73;
+  /* rgb(201, 239, 115) */ }
+
+.header {
   grid-area: header;
   position: sticky;
-  z-index: 1000;
-}
+  z-index: 1000; }
+  @media only screen and (min-width: 1024px) {
+    .header__nav {
+      bottom: 60px;
+      z-index: 900;
+      margin-left: 198px; }
+      .header__nav li.nav-item {
+        padding: 0 50px; } }
+  .header__logo {
+    width: 66px;
+    height: 66px;
+    float: right; }
+    @media only screen and (min-width: 768px) {
+      .header__logo {
+        width: 132px;
+        height: 132px; } }
+    @media only screen and (min-width: 1024px) {
+      .header__logo {
+        width: 198px;
+        height: 198px;
+        float: none;
+        z-index: 1000; } }
 
-.logo {
-  width: 66px;
-  height: 66px;
-  float: right;
-}
-
-.container {
+.main {
   text-align: center;
   position: relative;
-}
-
-main {
   grid-area: main;
-  margin-top: 30px;
-}
+  margin-top: 30px; }
+  .main__productoMain {
+    width: 270px;
+    height: 180px;
+    border-radius: 10px; }
+    @media only screen and (min-width: 1024px) {
+      .main__productoMain {
+        width: 480px;
+        height: 320px; } }
+  .main__muestraProd {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px; }
+    @media only screen and (min-width: 768px) {
+      .main__muestraProd {
+        margin-bottom: -100px; } }
+    @media only screen and (min-width: 1024px) {
+      .main__muestraProd {
+        height: 800px;
+        margin-bottom: -150px; } }
+    .main__muestraProd .carousel {
+      justify-content: center;
+      width: 300px;
+      height: 300px; }
+      @media only screen and (min-width: 768px) {
+        .main__muestraProd .carousel {
+          width: 600px;
+          height: 600px; } }
+      @media only screen and (min-width: 1024px) {
+        .main__muestraProd .carousel {
+          width: 800px;
+          height: 800px; } }
+      .main__muestraProd .carousel__arrow {
+        bottom: 100px; }
+        @media only screen and (min-width: 768px) {
+          .main__muestraProd .carousel__arrow {
+            bottom: 182px; } }
+        @media only screen and (min-width: 1024px) {
+          .main__muestraProd .carousel__arrow {
+            bottom: 250px; } }
 
-/* CUERPO PRINCIPAL INDEX */
-h3,h2,.productos_h4,.producto_h5 {
-  color: #c9ef73; /* rgb(201, 239, 115) */
-}
-
-.productoMain {
-  width: 270px;
-  height: 180px;
-  border-radius: 10px;
-}
-
-.muestraProd {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 50px;
-}
-
-.carousel-item {
-  width: 300px;
-  height: 300px;
-}
-
-.carousel-arrow {
-  bottom: 100px;
-}
-
-.carousel-caption {
-  bottom: 100px;
-}
-
-.carousel-inner a {
-  text-decoration: none;
-  color: inherit;
-}
-
- /* TABLA Y IFRAME */
 .table {
   display: flex;
   align-items: center;
-  flex-direction: column;
-}
-
-table {
-  position: relative;
-  text-align: left;
-  color: #eeeeee;
-}
-
-th p{
-  color: #c9ef73;
-  font-weight:900;
-}
+  flex-direction: column; }
+  .table__inner {
+    position: relative;
+    text-align: left;
+    color: #eeeeee; }
+  .table__thp {
+    color: #c9ef73;
+    font-weight: 900; }
 
 iframe {
   width: 240px;
-  height: 160px;
-}
+  height: 160px; }
+  @media only screen and (min-width: 768px) {
+    iframe {
+      width: 480px;
+      height: 320px; } }
 
-/* FOOTER */
-footer {
+.footer {
   grid-area: footer;
-  width: 80vw;
-}
-
-.line {
-  padding-top: 15px;
-  border-bottom: solid 1px;
-  width: 100vw;
-}
+  width: 80vw; }
+  @media only screen and (min-width: 1024px) {
+    .footer {
+      position: relative;
+      left: 160px; } }
+  .footer__line {
+    padding-top: 15px;
+    border-bottom: solid 1px;
+    width: 100vw; }
+    @media only screen and (min-width: 1024px) {
+      .footer__line {
+        padding-top: 50px;
+        width: 1600px; } }
 
 /* NUESTRAS BICICLETAS */
-.bicProductos {
+.bics {
   display: grid;
   grid-template-rows: repeat(6, 1fr);
-  justify-items: center;
-}
-
-.producto {
-  width: 280px;
-  border: solid 1px;
-  border-radius: 10px;
-  padding: 30px;
-  margin: 30px;
-  height: 280px;
-  transition: transform 1s;
-}
-
-.productoImg {
-  width: 210px;
-  height: 140px;
-  border-radius: 10px;
-}
-
-.producto:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.producto a {
-  text-decoration: none;
-  color: inherit;
-  position: relative;
-  top: 13px;
-}
+  justify-items: center; }
+  @media only screen and (min-width: 768px) {
+    .bics {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: repeat(3, 1fr); } }
+  @media only screen and (min-width: 1024px) {
+    .bics {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr); } }
+  .bics__producto {
+    width: 280px;
+    height: 280px;
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    transition: transform 1s; }
+    @media only screen and (min-width: 768px) {
+      .bics__producto {
+        width: 270px;
+        height: 370px; } }
+    @media only screen and (min-width: 1024px) {
+      .bics__producto {
+        width: 20vw;
+        height: 320px; } }
+    .bics__producto a {
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+      top: 13px; }
+  .bics__producto:hover {
+    transform: scale(1.1, 1.1); }
+  .bics__productoImg {
+    width: 210px;
+    height: 140px;
+    border-radius: 10px; }
 
 /* PREGUNTAS FRECUENTES */
-.pregFre {
+.pregs {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  text-align: left;
-}
-
-.pregunta {
-  padding: 15px;
-  border: solid 1px;
-  border-radius: 10px;
-  margin-top: 15px;
-}
+  text-align: left; }
+  .pregs__pregunta {
+    padding: 15px;
+    border: solid 1px;
+    border-radius: 10px;
+    margin-top: 15px; }
+    @media only screen and (min-width: 1024px) {
+      .pregs__pregunta {
+        margin-left: 160px;
+        margin-right: 160px;
+        margin-top: 40px; } }
 
 /* CONTACTO */
-section#form {
+.contacto {
   text-align: justify;
   line-height: 1.6;
   display: inline-block;
   border-radius: 5px;
   border-style: double;
   padding: 10px;
-  margin-top: 50px;
-}
-
-section#form h1{
-  position: relative;
-  bottom: 10px;
-  text-align: center;
-}
-
-input#email {
-  position: relative;
-  left: 78px;
-}
-
-textarea {
-  width: 280px;
-}
-
-/* MEDIA QUERY TABLET */
-@media only screen and (min-width:768px)
-{
-  html {
-    font-size: 100%;
-  }
-
-  body {
-    grid-template-areas:
-    "header header"
-    "main main"
-    "footer footer";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 132px auto 200px;
-    background-size: 100% 250%;
-  }
-
-  .logo {
-    width: 132px;
-    height: 132px;
-  }
-
-  /* CUERPO PRINCIPAL E INDEX */
-
-  .muestraProd {
-    margin-bottom: -100px;
-  }
-
-  .carousel-item {
-    width: 600px;
-    height: 600px;
-  }
-
-  .carousel-arrow {
-    bottom: 182px;
-  }
-
-  .carousel-caption {
-    bottom: 182px;
-  }
-
-
-  /* TABLA Y IFRAME */
-  iframe {
-    width: 480px;
-    height: 320px;
-  }
-
-  /* NUESTRAS BICICLETAS */
-  .bicProductos {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(3, 1fr);
-  }
-
-  .producto {
-    width: 270px;
-    height: 370px;
-  }
-
-  /* CONTACTO */
-  input#email {
-    left: 104px;
-  }
-
-  textarea {
-    width: 550px;
-  }
-}
-
-/* MEDIA QUERY DESKTOP */
-@media only screen and (min-width:1024px)
-{
-
-  body {
-    grid-template-areas:
-    "header header header header"
-    "main main main main"
-    "footer footer footer footer";
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 200px auto 200px;
-    background-size: 100% 200%;
-  }
-
-  .logo {
-    width: 198px;
-    height: 198px;
-    float: none;
-    z-index: 1000;
-  }
-
-  /* ESTILOS DE NAVBAR */
-  nav {
-    bottom: 60px;
-    z-index: 900;
-    margin-left: 198px;
-  }
-
-  li.nav-item {
-    padding: 0 50px;
-  }
-
-  /* CUERPO PRINCIPAL INDEX */
-
-  .productoMain {
-    width: 480px;
-    height: 320px;
-  }
-
-  .muestraProd {
-    margin-bottom: -150px;
-  }
-
-  .carousel-item {
-    width: 800px;
-    height: 800px;
-  }
-
-  .carousel-arrow {
-    bottom: 250px;
-  }
-
-  .carousel-caption {
-    bottom: 250px;
-  }
-
-
-  /* FOOTER */
-
-  footer {
+  margin-top: 50px; }
+  @media only screen and (min-width: 1024px) {
+    .contacto {
+      padding: 20px;
+      padding-top: 10px;
+      width: 60vw; } }
+  .contacto__h2 {
     position: relative;
-    left: 160px;
-  }
-
-  .line {
-    padding-top: 50px;
-    width: 1600px;
-  }
-
-  /* NUESTRAS BICICLETAS */
-  .bicProductos {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-
-  .producto {
-    width: 20vw;
-    height: 320px;
-  }
-
-  /* PREGUNTAS FRECUENTES */
-
-  .pregunta {
-    margin-left: 160px;
-    margin-right: 160px;
-    margin-top: 15px;
-  }
-
-  /* CONTACTO */
-
-  section#form {
-    padding: 20px;
-    padding-top: 10px;
-    width: 60vw;
-  }
-}
+    bottom: 10px;
+    text-align: center; }
+  .contacto__email {
+    position: relative;
+    left: 78px; }
+    @media only screen and (min-width: 768px) {
+      .contacto__email {
+        left: 104px; } }
+  .contacto__text {
+    width: 280px; }
+    @media only screen and (min-width: 768px) {
+      .contacto__text {
+        width: 550px; } }
+    @media only screen and (min-width: 1024px) {
+      .contacto__text {
+        width: 650px; } }

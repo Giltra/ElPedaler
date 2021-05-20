@@ -11,31 +11,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
   <body>
-    <header>
-      <a href="index.html"><img class="logo" src="img/logo.jpg" alt=""></a>
+    <header class="header">
+      <a href="index.html"><img class="header__logo" src="img/logo.jpg" alt=""></a>
       <!-- BARRA DE NAVEGACION -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-custom" style="background-color: #c9ef73;">
-        <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-custom header__nav" style="background-color: #c9ef73;">
+        <div class="container-fluid">
         <!-- BOTON DE DESPLIEGUE DE NAV -->
           <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarExpand"
-          aria-controls="navbarExpand"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- CONTENIDO NAV -->
-        <div class=" navbar-collapse collapse" id="navbarExpand">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <!-- DROP -->
-            <li class="nav-item dropdown">
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarExpand"
+            aria-controls="navbarExpand"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- CONTENIDO NAV -->
+          <div class="navbar-collapse collapse" id="navbarExpand">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <!-- DROP -->
+              <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Bicicletas
                 </a>
@@ -44,57 +44,57 @@
                   <li><a class="dropdown-item" href="bicRut.html">Bicicletas de Ruta</a></li>
                   <li><a class="dropdown-item" href="bicUrb.html">Bicicletas Urbanas</a></li>
                 </ul>
-            </li>
-            <!-- FIN DROP -->
-            <li class="nav-item">
-              <a class="nav-link" href="pregFre.html">Preguntas Frecuentes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
+              </li>
+              <!-- FIN DROP -->
+              <li class="nav-item">
+                <a class="nav-link" href="pregFre.html">Preguntas Frecuentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
       </nav>
     </header>
     <!-- CONTENIDO -->
-    <main class="container">
+    <main class="container main">
       <h3>Bicicletas Urbanas</h3>
-      <section class="bicProductos">
-        <article class="producto">
+      <section class="bics">
+        <article class="bics__producto">
           <h5 class= "producto_h5">Bicicleta Sunny Comet rod 26, parrilla, luz delantera, urbana</h3>
-          <img class="productoImg" src="img/BicUrba.jpg" alt="Bicicleta Sunny Comet rod 26, parrilla, luz delantera, urbana"><br>
+          <img class="bics__productoImg" src="img/BicUrba.jpg" alt="Bicicleta Sunny Comet rod 26, parrilla, luz delantera, urbana"><br>
           <a href="#">Detalles</a>
         </article>
-        <article class="producto">
+        <article class="bics__producto">
           <h5 class= "producto_h5">Bicicleta Ofo amarilla, rod 26, canasta, sin luz, urbana</h3>
-          <img class="productoImg" src="img/BicUrba2.jpg" alt="Bicicleta Ofo amarilla, rod 26, canasta, sin luz, urbana"><br>
+          <img class="bics__productoImg" src="img/BicUrba2.jpg" alt="Bicicleta Ofo amarilla, rod 26, canasta, sin luz, urbana"><br>
           <a href="#">Detalles</a>
         </article>
-        <article class="producto">
+        <article class="bics__producto">
           <h5 class= "producto_h5">Bicicleta Custom rod 26, sin parrilla, sin luz, urbana</h3>
-          <img class="productoImg" src="img/BicUrba3.jpg" alt="Bicicleta Custom rod 26, sin parrilla, sin luz, urbana"><br>
+          <img class="bics__productoImg" src="img/BicUrba3.jpg" alt="Bicicleta Custom rod 26, sin parrilla, sin luz, urbana"><br>
           <a href="#">Detalles</a>
         </article>
-        <article class="producto">
+        <article class="bics__producto">
           <h5 class= "producto_h5">Bicicleta Mobike gris, rod 26, canasta, sin luz, urbana</h3>
-          <img class="productoImg" src="img/BicUrba4.jpg" alt="Bicicleta Mobike gris, rod 26, canasta, sin luz, urbana"><br>
+          <img class="bics__productoImg" src="img/BicUrba4.jpg" alt="Bicicleta Mobike gris, rod 26, canasta, sin luz, urbana"><br>
           <a href="#">Detalles</a>
         </article>
-        <article class="producto">
+        <article class="bics__producto">
           <h5 class= "producto_h5">Bicicleta Custom celeste, rod 26, canasta, sin luz, urbana</h3>
-          <img class="productoImg" src="img/BicUrba5.jpg" alt="Bicicleta Custom celeste, rod 26, canasta, sin luz, urbana"><br>
+          <img class="bics__productoImg" src="img/BicUrba5.jpg" alt="Bicicleta Custom celeste, rod 26, canasta, sin luz, urbana"><br>
           <a href="#">Detalles</a>
         </article>
-        <article class="producto">
+        <article class="bics__producto">
           <h5 class= "producto_h5">Bicicleta Custom crema, rod 26, parrilla, luz delantera, urbana</h3>
-          <img class="productoImg" src="img/BicUrba6.jpg" alt="imagen de bicicleta urbana"><br>
+          <img class="bics__productoImg" src="img/BicUrba6.jpg" alt="imagen de bicicleta urbana"><br>
           <a href="#">Detalles</a>
         </article>
       </section>
     </main>
-    <footer>
-      <div class="line"></div>
+    <footer class="footer">
+      <div class="footer__line"></div>
       <p>Contáctese</p>
       <p>ipsum@ipsum.com</p>
       <p>Nuestro Local</p>
