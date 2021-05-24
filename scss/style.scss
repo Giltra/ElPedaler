@@ -49,7 +49,7 @@ body {
   }
 }
 
-h3,h2,.productos_h4,.producto_h5 {
+h3,h2,h1,.productos_h4,.producto_h5 {
   color: $green-yellow; /* rgb(201, 239, 115) */
 }
 
@@ -91,6 +91,10 @@ h3,h2,.productos_h4,.producto_h5 {
   position: relative;
   grid-area: main;
   margin-top: 30px;
+
+  &__h1 {
+    font-size: 2rem;
+  }
 
   // INDEX
   &__productoMain {

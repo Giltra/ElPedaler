@@ -29,7 +29,7 @@ body {
       grid-template-rows: 200px auto 200px;
       background-size: 100% 200%; } }
 
-h3, h2, .productos_h4, .producto_h5 {
+h3, h2, h1, .productos_h4, .producto_h5 {
   color: #c9ef73;
   /* rgb(201, 239, 115) */ }
 
@@ -65,6 +65,8 @@ h3, h2, .productos_h4, .producto_h5 {
   position: relative;
   grid-area: main;
   margin-top: 30px; }
+  .main__h1 {
+    font-size: 2rem; }
   .main__productoMain {
     width: 270px;
     height: 180px;
