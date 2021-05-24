@@ -41,7 +41,8 @@ h3, h2, .productos_h4, .producto_h5 {
     .header__nav {
       bottom: 60px;
       z-index: 900;
-      margin-left: 198px; }
+      margin-left: 198px;
+      background-color: #c9ef73; }
       .header__nav li.nav-item {
         padding: 0 50px; } }
   .header__logo {
@@ -94,8 +95,8 @@ h3, h2, .productos_h4, .producto_h5 {
           height: 600px; } }
       @media only screen and (min-width: 1024px) {
         .main__muestraProd .carousel {
-          width: 800px;
-          height: 800px; } }
+          width: 900px;
+          height: 900px; } }
       .main__muestraProd .carousel__arrow {
         bottom: 100px; }
         @media only screen and (min-width: 768px) {
@@ -141,7 +142,6 @@ iframe {
         padding-top: 50px;
         width: 1600px; } }
 
-/* NUESTRAS BICICLETAS */
 .bics {
   display: grid;
   grid-template-rows: repeat(6, 1fr);
@@ -182,7 +182,6 @@ iframe {
     height: 140px;
     border-radius: 10px; }
 
-/* PREGUNTAS FRECUENTES */
 .pregs {
   display: flex;
   flex-direction: column;
@@ -199,7 +198,6 @@ iframe {
         margin-right: 160px;
         margin-top: 40px; } }
 
-/* CONTACTO */
 .contacto {
   text-align: justify;
   line-height: 1.6;
@@ -212,7 +210,7 @@ iframe {
     .contacto {
       padding: 20px;
       padding-top: 10px;
-      width: 60vw; } }
+      width: 1100px; } }
   .contacto__h2 {
     position: relative;
     bottom: 10px;
@@ -227,7 +225,7 @@ iframe {
     width: 280px; }
     @media only screen and (min-width: 768px) {
       .contacto__text {
-        width: 550px; } }
+        width: 560px; } }
     @media only screen and (min-width: 1024px) {
       .contacto__text {
-        width: 650px; } }
+        width: 840px; } }

@@ -1,6 +1,9 @@
-$lighter-gray: #eeeeee;
-$green-yellow: #c9ef73;
+@import "vars.scss";
 
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
 // GENERAL
 html {
   font-size: 75%;
@@ -18,7 +21,7 @@ body {
   "main"
   "footer";
   grid-template-rows: 66px auto 100px;
-  background-color: #141414;
+  background-color: $shiny-black;
   background-image: url("../img/background_cave.jpg");
   background-size: 100% 300%;
   color: $lighter-gray; /* rgb(238, 238, 238) */
@@ -60,6 +63,7 @@ h3,h2,.productos_h4,.producto_h5 {
       bottom: 60px;
       z-index: 900;
       margin-left: 198px;
+      background-color: $green-yellow;
 
       li.nav-item {
         padding: 0 50px;
@@ -68,17 +72,14 @@ h3,h2,.productos_h4,.producto_h5 {
   }
 
   &__logo {
-    width: 66px;
-    height: 66px;
+    @include size(66px, 66px);
     float: right;
 
     @media only screen and (min-width:768px) {
-      width: 132px;
-      height: 132px;
+      @include size(132px, 132px);
     }
     @media only screen and (min-width:1024px) {
-      width: 198px;
-      height: 198px;
+      @include size(198px, 198px);
       float: none;
       z-index: 1000;
     }
@@ -93,13 +94,11 @@ h3,h2,.productos_h4,.producto_h5 {
 
   // INDEX
   &__productoMain {
-    width: 270px;
-    height: 180px;
+    @include size(270px, 180px);
     border-radius: 10px;
 
     @media only screen and (min-width: 1024px) {
-      width: 480px;
-      height: 320px;
+      @include size(480px, 320px);
     }
   }
 
@@ -120,17 +119,14 @@ h3,h2,.productos_h4,.producto_h5 {
     // CAROUSEL
     .carousel {
       justify-content: center;
-      width: 300px;
-      height: 300px;
+      @include size($carousel-hw, $carousel-hw);
 
       @media only screen and (min-width:768px) {
-        width: 600px;
-        height: 600px;
+        @include size($carousel-hw*2, $carousel-hw*2);
       }
 
       @media only screen and (min-width:1024px) {
-        width: 800px;
-        height: 800px;
+        @include size($carousel-hw*3, $carousel-hw*3);
       }
       &__arrow {
         bottom: 100px;
@@ -165,12 +161,10 @@ h3,h2,.productos_h4,.producto_h5 {
 }
 
 iframe {
-  width: 240px;
-  height: 160px;
+  @include size($iframe-w, $iframe-h);
 
   @media only screen and (min-width:768px) {
-    width: 480px;
-    height: 320px;
+    @include size($iframe-w*2, $iframe-h*2);
   }
 }
 // FIN MAIN
@@ -196,7 +190,7 @@ iframe {
   }
 }
 
-/* NUESTRAS BICICLETAS */
+// NUESTRAS BICICLETAS
 .bics {
   display: grid;
   grid-template-rows: repeat(6, 1fr);
@@ -213,8 +207,7 @@ iframe {
   }
 
   &__producto {
-    width: 280px;
-    height: 280px;
+    @include size(280px, 280px);
     border: solid 1px;
     border-radius: 10px;
     padding: 30px;
@@ -222,13 +215,11 @@ iframe {
     transition: transform 1s;
 
     @media only screen and (min-width:768px) {
-      width: 270px;
-      height: 370px;
+      @include size(270px, 370px);
     }
 
     @media only screen and (min-width:1024px) {
-      width: 20vw;
-      height: 320px;
+      @include size(20vw, 320px);
     }
 
     a{
@@ -242,13 +233,12 @@ iframe {
     transform: scale(1.1, 1.1);
   }
   &__productoImg {
-    width: 210px;
-    height: 140px;
+    @include size(210px, 140px);
     border-radius: 10px;
   }
 }
 
-/* PREGUNTAS FRECUENTES */
+// PREGUNTAS FRECUENTES
 .pregs {
   display: flex;
   flex-direction: column;
@@ -270,7 +260,7 @@ iframe {
 }
 
 
-/* CONTACTO */
+ // CONTACTO
 .contacto {
   text-align: justify;
   line-height: 1.6;
@@ -283,7 +273,7 @@ iframe {
   @media only screen and (min-width:1024px) {
     padding: 20px;
     padding-top: 10px;
-    width: 60vw;
+    width: 1100px;
   }
 
   &__h2 {
@@ -302,14 +292,14 @@ iframe {
   }
 
   &__text {
-    width: 280px;
+    width: $textarea-w;
 
     @media only screen and (min-width:768px) {
-      width: 550px;
+      width: $textarea-w*2;
     }
 
     @media only screen and (min-width:1024px) {
-      width: 650px;
+      width: $textarea-w*3;
     }
   }
 }
