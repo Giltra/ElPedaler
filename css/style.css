@@ -1,3 +1,35 @@
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd; }
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d; }
+
+.btn-success {
+  background-color: #7fffd4;
+  border-color: #7fffd4; }
+
+.btn-info {
+  background-color: #0dcaf0;
+  border-color: #0dcaf0; }
+
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107; }
+
+.btn-danger {
+  background-color: #5F021F;
+  border-color: #5F021F; }
+
+.btn-light {
+  background-color: #D3D3D3;
+  border-color: #D3D3D3; }
+
+.btn-dark {
+  background-color: #A9A9A9;
+  border-color: #A9A9A9; }
+
 html {
   font-size: 75%; }
   @media only screen and (min-width: 768px) {
