@@ -1,0 +1,34 @@
+
+// VARIABLES
+$primary:       #0d6efd !default;
+$secondary:     #6c757d !default;
+$success:       #013220 !default;
+$info:          #0dcaf0 !default;
+$warning:       #ffc107 !default;
+$danger:        #ff4500 !default;
+$light:         #D3D3D3 !default;
+$dark:          #A9A9A9 !default;
+
+// MIXINS
+@mixin button-variant($background, $border) {
+  background-color: $background;
+  border-color: $border;
+}
+
+// MAPPING
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+) !default;
+// ITERACIÓN
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+  }
+}

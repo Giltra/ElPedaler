@@ -1,5 +1,7 @@
 @import "vars.scss";
+@import "bootstrapMod.scss";
 
+// MIXINS
 @mixin size($width, $height) {
   width: $width;
   height: $height;
