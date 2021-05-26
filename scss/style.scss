@@ -1,4 +1,5 @@
 @import "vars.scss";
+@import "bootstrapMod.scss";
 
 // MIXINS
 @mixin size($width, $height) {
@@ -50,7 +51,7 @@ body {
   }
 }
 
-h3,h2,h1,.productos_h4,.producto_h5 {
+h3,h2,h1,.productos_h4,.producto_em {
   color: $green-yellow; /* rgb(201, 239, 115) */
 }
 
@@ -146,6 +147,26 @@ h3,h2,h1,.productos_h4,.producto_h5 {
       }
     }
   }
+
+  &__error {
+    background-color: $shiny-black;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+
+    .error_img {
+      @include size(240px, 160px);
+
+      @media only screen and (min-width:768px) {
+        @include size(480px, 320px);
+      }
+    }
+
+    .regreso {
+      position: relative;
+      top: 10px;
+    }
+  }
 }
 
   // TABLE Y IFRAME
@@ -155,6 +176,7 @@ h3,h2,h1,.productos_h4,.producto_h5 {
   flex-direction: column;
 
   &__inner {
+    border: solid 3px;
     position: relative;
     text-align: left;
     color: $lighter-gray;
@@ -197,19 +219,23 @@ iframe {
 
 // NUESTRAS BICICLETAS
 .bics {
-  display: grid;
-  grid-template-rows: repeat(6, 1fr);
   justify-items: center;
 
-  @media only screen and (min-width:768px) {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(3, 1fr);
+  &__inner {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+
+    @media only screen and (min-width:768px) {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    @media only screen and (min-width:1024px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
   }
 
-  @media only screen and (min-width:1024px) {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
 
   &__producto {
     @include size(280px, 280px);
@@ -218,6 +244,10 @@ iframe {
     padding: 30px;
     margin: 30px;
     transition: transform 1s;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
 
     @media only screen and (min-width:768px) {
       @include size(270px, 370px);
@@ -234,12 +264,18 @@ iframe {
       top: 13px;
     }
   }
+
   &__producto:hover {
     transform: scale(1.1, 1.1);
   }
+
   &__productoImg {
     @include size(210px, 140px);
     border-radius: 10px;
+  }
+
+  &__productoEm {
+    font-size: 1.25rem;
   }
 }
 
@@ -247,8 +283,11 @@ iframe {
 .pregs {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  text-align: left;
+  text-align: center;
+
+  &__inner {
+    text-align: left;
+  }
 
   &__pregunta {
     padding: 15px;
@@ -263,6 +302,7 @@ iframe {
     }
   }
 }
+
 
  // CONTACTO
 .contacto {
@@ -280,7 +320,7 @@ iframe {
     width: 1100px;
   }
 
-  &__h2 {
+  &__h1 {
     position: relative;
     bottom: 10px;
     text-align: center;
