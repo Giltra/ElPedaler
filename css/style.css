@@ -69,7 +69,7 @@ h3, h2, h1, .productos_h4, .producto_em {
   position: sticky;
   z-index: 1000; }
   .header__nav {
-    background-color: #d8d8d8; }
+    background-color: #e0e0e0; }
     @media only screen and (min-width: 1024px) {
       .header__nav {
         bottom: 80px;
