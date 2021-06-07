@@ -20,11 +20,11 @@
 </head>
   <body>
     <header class="header">
-      <a href="index.html"><img class="header__logo" src="img/logo.jpg" alt=""></a>
+      <a href="index.html"><img class="header__logo" src="img/logo.png" alt="Logo de ElPedaler. Clic para volver al inicio."></a>
       <!-- BARRA DE NAVEGACION -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-custom header__nav" style="background-color: #c9ef73;">
+      <nav class="navbar navbar-expand-lg navbar-light bg-custom header__nav">
         <div class="container-fluid">
-        <!-- BOTON DE DESPLIEGUE DE NAV -->
+          <!-- BOTON DE DESPLIEGUE DE NAV -->
           <button
             class="navbar-toggler"
             type="button"
@@ -68,16 +68,8 @@
     <main class="container main">
       <h1 class="main__h1">Bicicletería ElPedaler</h1>
       <h4><i>"Una nueva forma de transportarse"</i></h4>
-      <!-- TITULO Y DESTACADO -->
-      <section class="main__title">
-        <div class="">
-        <h3>Destacado de la Semana</h3>
-        <h4>Bicicleta Bulls negra, rod 29, suspensión delantera, 21 velocidades</h4>
-        <img class="main__productoMain" src="img/main.jpg" alt="">
-        </div>
-      </section>
       <div class="main__body">
-        <!-- MUESTRA DE PRODUCTOS -->
+        <!-- CAROUSEL -->
         <section class="main__muestraProd">
           <div id="carousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -111,6 +103,17 @@
             <a class="carousel-control-next carousel-arrow carousel__arrow" href="#carousel" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="false"></span>
             </a>
+          </div>
+        </section>
+          <!-- TITULO Y DESTACADO -->
+        <section class="main__title">
+          <div class="card col-xl-5">
+            <h3 class="card-header">Destacado de la Semana</h3>
+            <div class="list-group list-group-flush">
+              <p class="card-text text-muted list-group-item">Bicicleta Bulls negra, rod 29, suspensión delantera, 21 velocidades</p>
+              <img class="productoMain card-img-right list-group-item" src="img/main.jpg" alt="Imagen de bicicleta Bulls negra, rod 29, suspensión delantera, 21 velocidades">
+              <p class="text-muted list-group-item"><a href="#">Detalles</a></p>
+            </div>
           </div>
         </section>
        <!-- TABLA -->

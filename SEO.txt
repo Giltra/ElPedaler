@@ -7,4 +7,5 @@
 7) Puse h1 en cada página, para que sea claro el tema de cada una.
 8) Agregué un em en cada article en las páginas de productos para que resalten los nombres de los productos.
 9) Pasé el idioma de los caracteres en la etiqueta de html a "es" y mantuve el "utf-8".
-10) Agregué etiqueta <meta> de autor en todas las páginas.
+10) Agregué etiqueta <meta> de autor en todas las páginas, para darme más exposición a mí.
+
