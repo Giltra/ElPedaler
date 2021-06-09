@@ -1,0 +1,26 @@
+@import "vars.scss";
+
+// CAROUSEL
+.carousel {
+ justify-content: center;
+ @include size($carousel-hw, $carousel-hw);
+
+ @media only screen and (min-width:768px) {
+   @include size($carousel-hw*2, $carousel-hw*2);
+ }
+
+ @media only screen and (min-width:1024px) {
+   @include size($carousel-hw*3, $carousel-hw*3);
+ }
+ &__arrow {
+   bottom: 100px;
+
+   @media only screen and (min-width:768px) {
+     bottom: 182px;
+   }
+
+   @media only screen and (min-width:1024px) {
+     bottom: 250px;
+   }
+ }
+}

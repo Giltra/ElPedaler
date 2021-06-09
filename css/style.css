@@ -44,7 +44,6 @@ body {
   background-color: #f6f6f6;
   background-size: 100% 300%;
   color: #141414;
-  /* rgb(238, 238, 238) */
   height: 100vh;
   margin: 0 auto; }
   @media only screen and (min-width: 768px) {
@@ -61,8 +60,7 @@ body {
       background-size: 100% 200%; } }
 
 h3, h2, h1, .productos_h4, .producto_em {
-  color: #b54b4b;
-  /* rgb(201, 239, 115) */ }
+  color: #b54b4b; }
 
 .header {
   grid-area: header;
@@ -77,7 +75,6 @@ h3, h2, h1, .productos_h4, .producto_em {
           padding: 0 50px; } }
     .header__nav .navbar-nav {
       width: 100%;
-      text-align: center;
       justify-content: flex-end; }
       @media only screen and (min-width: 992px) {
         .header__nav .navbar-nav {
@@ -107,26 +104,6 @@ h3, h2, h1, .productos_h4, .producto_em {
       .main__muestraProd {
         height: 800px;
         margin-bottom: -150px; } }
-    .main__muestraProd .carousel {
-      justify-content: center;
-      width: 300px;
-      height: 300px; }
-      @media only screen and (min-width: 768px) {
-        .main__muestraProd .carousel {
-          width: 600px;
-          height: 600px; } }
-      @media only screen and (min-width: 1024px) {
-        .main__muestraProd .carousel {
-          width: 900px;
-          height: 900px; } }
-      .main__muestraProd .carousel__arrow {
-        bottom: 100px; }
-        @media only screen and (min-width: 768px) {
-          .main__muestraProd .carousel__arrow {
-            bottom: 182px; } }
-        @media only screen and (min-width: 1024px) {
-          .main__muestraProd .carousel__arrow {
-            bottom: 250px; } }
   .main__title {
     display: flex;
     justify-content: center;
@@ -150,14 +127,15 @@ h3, h2, h1, .productos_h4, .producto_em {
     display: flex;
     align-items: center;
     flex-flow: column nowrap; }
-    .main__error .error_img {
+    .main__error .errorImg {
       width: 240px;
       height: 160px; }
       @media only screen and (min-width: 768px) {
-        .main__error .error_img {
+        .main__error .errorImg {
           width: 480px;
           height: 320px; } }
     .main__error .regreso {
+      justify-content: center;
       position: relative;
       top: 10px; }
 
@@ -184,21 +162,42 @@ iframe {
       width: 480px;
       height: 320px; } }
 
-.footer {
+.cierre {
   grid-area: footer;
   width: 80vw; }
   @media only screen and (min-width: 1024px) {
-    .footer {
+    .cierre {
       position: relative;
       left: 160px; } }
-  .footer__line {
+  .cierre__line {
     padding-top: 15px;
     border-bottom: solid 1px;
     width: 100vw; }
     @media only screen and (min-width: 1024px) {
-      .footer__line {
+      .cierre__line {
         padding-top: 50px;
         width: 1600px; } }
+
+.carousel {
+  justify-content: center;
+  width: 300px;
+  height: 300px; }
+  @media only screen and (min-width: 768px) {
+    .carousel {
+      width: 600px;
+      height: 600px; } }
+  @media only screen and (min-width: 1024px) {
+    .carousel {
+      width: 900px;
+      height: 900px; } }
+  .carousel__arrow {
+    bottom: 100px; }
+    @media only screen and (min-width: 768px) {
+      .carousel__arrow {
+        bottom: 182px; } }
+    @media only screen and (min-width: 1024px) {
+      .carousel__arrow {
+        bottom: 250px; } }
 
 .bics {
   justify-items: center; }

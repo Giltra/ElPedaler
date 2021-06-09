@@ -10,3 +10,9 @@ $carousel-hw: 300px;
 $iframe-w: 240px;
 $iframe-h: 160px;
 $textarea-w: 280px;
+
+// MIXINS
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}

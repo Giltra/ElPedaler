@@ -1,0 +1,132 @@
+@import "vars.scss";
+
+// NUESTRAS BICICLETAS
+.bics {
+  justify-items: center;
+
+  &__inner {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+
+    @media only screen and (min-width:768px) {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    @media only screen and (min-width:1024px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+
+
+  &__producto {
+    @include size(280px, 280px);
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    transition: transform 1s;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (min-width:768px) {
+      @include size(270px, 370px);
+    }
+
+    @media only screen and (min-width:1024px) {
+      @include size(20vw, 320px);
+    }
+
+    a{
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+      top: 13px;
+    }
+  }
+
+  &__producto:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+  &__productoImg {
+    @include size(210px, 140px);
+    border-radius: 10px;
+  }
+
+  &__productoEm {
+    font-size: 1.25rem;
+  }
+}
+
+// PREGUNTAS FRECUENTES
+.pregs {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &__inner {
+    text-align: left;
+  }
+
+  &__pregunta {
+    padding: 15px;
+    border: solid 1px;
+    border-radius: 10px;
+    margin-top: 15px;
+
+    @media only screen and (min-width:1024px) {
+      margin-left: 160px;
+      margin-right: 160px;
+      margin-top: 40px;
+    }
+  }
+}
+
+
+ // CONTACTO
+.contacto {
+  text-align: justify;
+  line-height: 1.6;
+  display: inline-block;
+  border-radius: 5px;
+  border-style: double;
+  padding: 10px;
+  margin-top: 50px;
+
+  @media only screen and (min-width:1024px) {
+    padding: 20px;
+    padding-top: 10px;
+    width: 1100px;
+  }
+
+  &__h1 {
+    position: relative;
+    bottom: 10px;
+    text-align: center;
+  }
+
+  &__email {
+    position: relative;
+    left: 78px;
+
+    @media only screen and (min-width:768px) {
+      left: 104px;
+    }
+  }
+
+  &__text {
+    width: $textarea-w;
+
+    @media only screen and (min-width:768px) {
+      width: $textarea-w*2;
+    }
+
+    @media only screen and (min-width:1024px) {
+      width: $textarea-w*3;
+    }
+  }
+}
