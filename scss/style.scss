@@ -62,31 +62,23 @@ h3,h2,h1,.productos_h4,.producto_em {
 
   &__nav {
     background-color: $light-gray;
+
     @media only screen and (min-width:1024px) {
-      bottom: 80px;
       z-index: 900;
-      margin-left: 198px;
 
       li.nav-item {
         padding: 0 50px;
       }
     }
-    @media only screen and (min-width:1280px) {
-      bottom: 56px;
-    }
-  }
 
-  &__logo {
-    @include size(66px, 66px);
-    float: right;
-
-    @media only screen and (min-width:768px) {
-      @include size(132px, 132px);
-    }
-    @media only screen and (min-width:1024px) {
-      @include size(198px, 198px);
-      float: none;
-      z-index: 1000;
+    .navbar-nav {
+      width: 100%;
+      text-align: center;
+      justify-content: flex-end;
+      @media only screen and (min-width:992px) {
+        gap: 25px;
+        margin-right: 100px;
+      }
     }
   }
 }
@@ -94,9 +86,13 @@ h3,h2,h1,.productos_h4,.producto_em {
   // MAIN
 .main {
   text-align: center;
-  position: relative;
   grid-area: main;
-  margin-top: 30px;
+  position: relative;
+  top: 40px;
+
+  @media only screen and (min-width:768px) {
+    top: 0px;
+  }
 
   &__h1 {
     font-size: 2rem;
