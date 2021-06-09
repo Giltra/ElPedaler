@@ -41,7 +41,7 @@ body {
   display: grid;
   grid-template-areas: "header" "main" "footer";
   grid-template-rows: 66px auto 100px;
-  background-color: #faf1e6;
+  background-color: #f6f6f6;
   background-size: 100% 300%;
   color: #141414;
   /* rgb(238, 238, 238) */
@@ -69,7 +69,7 @@ h3, h2, h1, .productos_h4, .producto_em {
   position: sticky;
   z-index: 1000; }
   .header__nav {
-    background-color: #e0e0e0; }
+    background-image: linear-gradient(to bottom, #f6f6f6 50%, #e0e0e0 100%); }
     @media only screen and (min-width: 1024px) {
       .header__nav {
         z-index: 900; }
@@ -146,7 +146,7 @@ h3, h2, h1, .productos_h4, .producto_em {
       text-decoration: none;
       color: inherit; }
   .main__error {
-    background-color: #faf1e6;
+    background-color: #f6f6f6;
     display: flex;
     align-items: center;
     flex-flow: column nowrap; }

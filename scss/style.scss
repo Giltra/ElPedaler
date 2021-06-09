@@ -61,7 +61,7 @@ h3,h2,h1,.productos_h4,.producto_em {
   z-index: 1000;
 
   &__nav {
-    background-color: $light-gray;
+    background-image: $light-gray;
 
     @media only screen and (min-width:1024px) {
       z-index: 900;
