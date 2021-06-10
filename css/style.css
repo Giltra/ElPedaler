@@ -70,14 +70,16 @@ h3, h2, h1, .productos_h4, .producto_em {
     background-image: linear-gradient(to bottom, #f6f6f6 50%, #e0e0e0 100%);
     align-items: center; }
     @media only screen and (min-width: 1200px) {
-      .header__nav li.nav-item {
-        padding: 0 50px; } }
-    .header__nav .navbar-brand img {
-      width: 115px;
+      .header__nav {
+        z-index: 900; }
+        .header__nav li.nav-item {
+          padding: 0 50px; } }
+    .header__nav .brandImg {
+      width: 130px;
       height: 30px; }
       @media only screen and (min-width: 1024px) {
-        .header__nav .navbar-brand img {
-          width: 230px;
+        .header__nav .brandImg {
+          width: 260px;
           height: 60px; } }
     .header__nav .navbar-nav {
       width: 100%;
