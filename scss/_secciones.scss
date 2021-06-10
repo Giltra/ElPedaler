@@ -2,10 +2,10 @@
 
 // NUESTRAS BICICLETAS
 .bics {
-  justify-items: center;
 
   &__inner {
     display: grid;
+    justify-content: center;
     grid-template-rows: repeat(6, 1fr);
 
     @media only screen and (min-width:768px) {
@@ -13,7 +13,7 @@
       grid-template-rows: repeat(3, 1fr);
     }
 
-    @media only screen and (min-width:1024px) {
+    @media only screen and (min-width:992px) {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
     }
@@ -36,8 +36,8 @@
       @include size(270px, 370px);
     }
 
-    @media only screen and (min-width:1024px) {
-      @include size(20vw, 320px);
+    @media only screen and (min-width:1200px) {
+      @include size(300px, 320px);
     }
 
     a{
@@ -86,7 +86,6 @@
   }
 }
 
-
  // CONTACTO
 .contacto {
   text-align: justify;
@@ -97,7 +96,7 @@
   padding: 10px;
   margin-top: 50px;
 
-  @media only screen and (min-width:1024px) {
+  @media only screen and (min-width:1200px) {
     padding: 20px;
     padding-top: 10px;
     width: 1100px;
@@ -107,6 +106,7 @@
     position: relative;
     bottom: 10px;
     text-align: center;
+    border-bottom: 1px solid grey;
   }
 
   &__email {
@@ -125,8 +125,15 @@
       width: $textarea-w*2;
     }
 
-    @media only screen and (min-width:1024px) {
+    @media only screen and (min-width:1200px) {
       width: $textarea-w*3;
     }
+  }
+
+  &__btn {
+    margin-right: 10px;
+  }
+  label {
+    margin: 15px 0px 15px;
   }
 }

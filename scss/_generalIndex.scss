@@ -29,7 +29,7 @@ body {
     "main main"
     "footer footer";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 132px auto 200px;
+    grid-template-rows: 120px auto 200px;
     background-size: 100% 250%;
   }
 
@@ -39,7 +39,7 @@ body {
     "main main main main"
     "footer footer footer footer";
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 200px auto 200px;
+    grid-template-rows: 120px auto 200px;
     background-size: 100% 200%;
   }
 }
@@ -55,18 +55,26 @@ h3,h2,h1,.productos_h4,.producto_em {
 
   &__nav {
     background-image: $light-gray;
+    align-items: center;
 
-    @media only screen and (min-width:1024px) {
-      z-index: 900;
-
+    @media only screen and (min-width:1200px) {
       li.nav-item {
         padding: 0 50px;
+      }
+    }
+
+    .navbar-brand img{
+      @include size(115px, 30px);
+
+      @media only screen and (min-width: 1024px){
+        @include size(230px, 60px);
       }
     }
 
     .navbar-nav {
       width: 100%;
       justify-content: flex-end;
+
       @media only screen and (min-width:992px) {
         gap: 25px;
         margin-right: 100px;
@@ -80,10 +88,10 @@ h3,h2,h1,.productos_h4,.producto_em {
   text-align: center;
   grid-area: main;
   position: relative;
-  top: 40px;
+  margin-top: 40px;
 
   @media only screen and (min-width:768px) {
-    top: 0px;
+    margin-top: 0px;
   }
 
   &__h1 {
@@ -113,9 +121,11 @@ h3,h2,h1,.productos_h4,.producto_em {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 10px;
     text-decoration: none;
 
+    @media only screen and (min-width: 1024px) {
+      margin-top: 40px;
+    }
     .productoMain {
       align-self: center;
       @include size(270px, 180px);
@@ -159,7 +169,10 @@ h3,h2,h1,.productos_h4,.producto_em {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 30px;
+
+  &__h2 {
+    margin: 50px 0px 20px;
+  }
 
   &__inner {
     border: solid 3px;
@@ -174,11 +187,22 @@ h3,h2,h1,.productos_h4,.producto_em {
   }
 }
 
-iframe {
-  @include size($iframe-w, $iframe-h);
+.video {
 
-  @media only screen and (min-width:768px) {
-    @include size($iframe-w*2, $iframe-h*2);
+  &__iframe {
+    @include size($iframe-w, $iframe-h);
+
+    @media only screen and (min-width:768px) {
+      @include size($iframe-w*2, $iframe-h*2);
+    }
+  }
+
+  &__h3 {
+    margin: 50px 0px 20px;
+
+    @media only screen and (min-width: 1024px){
+      margin: 70px 0px 30px;
+    }
   }
 }
 // FIN MAIN
@@ -187,19 +211,23 @@ iframe {
 .cierre {
   grid-area: footer;
   width: 80vw;
+  position: relative;
+  top: 50px;
+  align-self: flex-start;
+  padding-bottom: 20px;
 
-  @media only screen and (min-width:1024px) {
-    position: relative;
-    left: 160px;
+  &__content {
+    margin-top: 15px;
+    line-height: 15px;
   }
+
   &__line {
     padding-top: 15px;
     border-bottom: solid 1px;
-    width: 100vw;
+    width: 75vw;
 
-    @media only screen and (min-width:1024px) {
+    @media only screen and (min-width:768px) {
       padding-top: 50px;
-      width: 1600px;
     }
   }
 }
