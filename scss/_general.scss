@@ -55,21 +55,22 @@ h3,h2,h1,.productos_h4,.producto_em {
   z-index: 1000;
 
   &__nav {
-    background-image: $light-gray;
+    background-image: $light-gray-lg;
     align-items: center;
 
     @media only screen and (min-width:1200px) {
       z-index: 900;
+
       li.nav-item {
         padding: 0 50px;
       }
     }
 
     .brandImg{
-      @include size(130px, 30px);
+      @include size(140px, 30px);
 
       @media only screen and (min-width: 1024px){
-        @include size(260px, 60px);
+        @include size(280px, 60px);
       }
     }
 
@@ -81,6 +82,10 @@ h3,h2,h1,.productos_h4,.producto_em {
         gap: 25px;
         margin-right: 100px;
       }
+    }
+
+    .dropdown-menu {
+      background-color: $light-gray;
     }
   }
 }

@@ -75,11 +75,11 @@ h3, h2, h1, .productos_h4, .producto_em {
         .header__nav li.nav-item {
           padding: 0 50px; } }
     .header__nav .brandImg {
-      width: 130px;
+      width: 140px;
       height: 30px; }
       @media only screen and (min-width: 1024px) {
         .header__nav .brandImg {
-          width: 260px;
+          width: 280px;
           height: 60px; } }
     .header__nav .navbar-nav {
       width: 100%;
@@ -88,12 +88,14 @@ h3, h2, h1, .productos_h4, .producto_em {
         .header__nav .navbar-nav {
           gap: 25px;
           margin-right: 100px; } }
+    .header__nav .dropdown-menu {
+      background-color: #ececec; }
 
 .main {
   text-align: center;
   grid-area: main;
   position: relative;
-  margin-top: 40px; }
+  margin-top: 10px; }
   @media only screen and (min-width: 768px) {
     .main {
       margin-top: 0px; } }
@@ -220,7 +222,7 @@ h3, h2, h1, .productos_h4, .producto_em {
 
 .bics__inner {
   display: grid;
-  justify-content: center;
+  justify-items: center;
   grid-template-rows: repeat(6, 1fr); }
   @media only screen and (min-width: 768px) {
     .bics__inner {
