@@ -15,8 +15,9 @@ body {
   grid-template-areas:
   "header"
   "main"
+  "aside"
   "footer";
-  grid-template-rows: 66px auto 100px;
+  grid-template-rows: 66px auto auto 100px;
   background-color: $off-white;
   background-size: 100% 300%;
   color: $shiny-black;
@@ -27,19 +28,20 @@ body {
     grid-template-areas:
     "header header"
     "main main"
+    "aside aside"
     "footer footer";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 120px auto 200px;
+    grid-template-rows: 86px auto auto 200px;
     background-size: 100% 250%;
   }
 
-  @media only screen and (min-width:1024px) {
+  @media only screen and (min-width:1200px) {
     grid-template-areas:
     "header header header header"
-    "main main main main"
+    "aside main main main"
     "footer footer footer footer";
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 120px auto 200px;
+    grid-template-columns: 20% 30% 25% 25%;
+    grid-template-rows: 86px auto 200px;
     background-size: 100% 200%;
   }
 }
@@ -55,10 +57,16 @@ h3,h2,h1,.productos_h4,.producto_em {
   z-index: 1000;
 
   &__nav {
-    background-image: $light-gray-lg;
+    background-color: $darker;
     align-items: center;
 
-    @media only screen and (min-width:1200px) {
+    @media only screen and(min-width: 1200px) {
+      li.nav-item {
+        padding: 0 25px;
+      }
+    }
+
+    @media only screen and (min-width:1400px) {
       z-index: 900;
 
       li.nav-item {
@@ -88,4 +96,86 @@ h3,h2,h1,.productos_h4,.producto_em {
       background-color: $light-gray;
     }
   }
+}
+
+ // ASIDE
+.aside {
+  grid-area: aside;
+  text-align: center;
+  margin-top: 50px;
+
+  @media only screen and (min-width:1200px) {
+    background-image: $light-gray-lg;
+    padding-left: 20px;
+    margin-top: 0px;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    @media only screen and (min-width: 1200px) {
+      margin-top: 40px;
+    }
+
+    .card {
+      margin-bottom: 30px;
+    }
+
+    .extraCard {
+      display: none;
+      @media only screen and (min-width:1200px) {
+        display: flex;
+      }
+    }
+
+    .productoMain {
+      align-self: center;
+      @include size(270px, 180px);
+      border-radius: 10px;
+
+      @media only screen and (min-width:1200px) {
+        @include size(189px, 126px);
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+
+// FOOTER
+.cierre {
+  grid-area: footer;
+  margin: 0px;
+  position: relative;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  background-color: $darker;
+  align-self: flex-start;
+  padding-top: 30px;
+
+
+  @media only screen and (min-width:1024px) {
+    &__content {
+      padding-top: 0px;
+      line-height: 15px;
+      margin-left: 160px;
+    }
+  }
+
+  // &__line {
+  //   padding-top: 15px;
+  //   border-bottom: solid 1px;
+  //   width: 75vw;
+  //
+  //   @media only screen and (min-width:768px) {
+  //     padding-top: 50px;
+  //   }
+  // }
 }

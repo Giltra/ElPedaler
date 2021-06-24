@@ -62,11 +62,12 @@
   }
 }
 
-// PREGUNTAS FRECUENTES
+// SOBRE NOSOTROS
 .pregs {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 50px;
 
   &__inner {
     text-align: left;
@@ -86,6 +87,70 @@
   }
 }
 
+.historia {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: $light-gray;
+  margin: 50px auto 50px;
+
+  @media only screen and(min-width: 1200px) {
+    display: grid;
+    grid-template-areas:
+    "title title"
+    "text1 img1"
+    "img2 text2"
+    "text3 img3";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80px 300px 300px 300px;
+    align-content: space-evenly;
+    background-color: inherit;
+  }
+  &__title {
+    grid-area: title;
+  }
+
+  // BUCLES DE CLASES
+
+  @for $i from 1 through 3 {
+    &__img#{$i} {
+      grid-area: img#{$i};
+      @media only screen and(min-width: 1200px) {
+        background-color: $light-gray;
+      }
+    }
+  }
+
+  @for $i from 1 through 3 {
+    &__text#{$i} {
+      grid-area: text#{$i};
+    }
+  }
+  
+  // FIN BUCLES
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 30px;
+    line-height: 20px;
+
+    @media only screen and (min-width: 768px) {
+      line-height: 25px;
+    }
+
+    @media only screen and(min-width: 1200px) {
+      line-height: 30px;
+      margin: 0px;
+    }
+
+    img {
+      @include size(300px, 200px);
+    }
+
+  }
+}
+
  // CONTACTO
 .contacto {
   text-align: justify;
@@ -99,7 +164,7 @@
   @media only screen and (min-width:1200px) {
     padding: 20px;
     padding-top: 10px;
-    width: 1100px;
+    width: 800px;
   }
 
   &__h1 {
@@ -123,10 +188,6 @@
 
     @media only screen and (min-width:768px) {
       width: $textarea-w*2;
-    }
-
-    @media only screen and (min-width:1200px) {
-      width: $textarea-w*3;
     }
   }
 
