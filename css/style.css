@@ -68,7 +68,11 @@ h3, h2, h1, .productos_h4, .producto_em {
   z-index: 1000; }
   .header__nav {
     background-color: #b3b3b3;
-    align-items: center; }
+    align-items: center;
+    font-size: 1.25rem; }
+    @media only screen and (min-width: 768px) {
+      .header__nav {
+        font-size: 1rem; } }
     @media only screen and (min-width: 1200px) {
       .header__nav li.nav-item {
         padding: 0 25px; } }
@@ -101,7 +105,7 @@ h3, h2, h1, .productos_h4, .producto_em {
   @media only screen and (min-width: 1200px) {
     .aside {
       background-image: linear-gradient(to bottom, #ececec 75%, #f6f6f6 100%);
-      padding-left: 20px;
+      padding-left: 0px;
       margin-top: 0px; } }
   .aside__title {
     display: flex;
@@ -398,10 +402,13 @@ h3, h2, h1, .productos_h4, .producto_em {
       .contacto__email {
         left: 104px; } }
   .contacto__text {
-    width: 280px; }
+    width: 310px; }
     @media only screen and (min-width: 768px) {
       .contacto__text {
-        width: 560px; } }
+        width: 550px; } }
+    @media only screen and (min-width: 992px) {
+      .contacto__text {
+        width: 750px; } }
   .contacto__btn {
     margin-right: 10px; }
   .contacto label {

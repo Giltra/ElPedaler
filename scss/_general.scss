@@ -59,6 +59,11 @@ h3,h2,h1,.productos_h4,.producto_em {
   &__nav {
     background-color: $darker;
     align-items: center;
+    font-size: 1.25rem;
+
+    @media only screen and (min-width:768px) {
+      font-size: 1rem;
+    }
 
     @media only screen and(min-width: 1200px) {
       li.nav-item {
@@ -106,7 +111,7 @@ h3,h2,h1,.productos_h4,.producto_em {
 
   @media only screen and (min-width:1200px) {
     background-image: $light-gray-lg;
-    padding-left: 20px;
+    padding-left: 0px;
     margin-top: 0px;
   }
 

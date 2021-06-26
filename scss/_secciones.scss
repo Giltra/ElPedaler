@@ -110,7 +110,6 @@
   }
 
   // BUCLES DE CLASES
-
   @for $i from 1 through 3 {
     &__img#{$i} {
       grid-area: img#{$i};
@@ -125,7 +124,6 @@
       grid-area: text#{$i};
     }
   }
-  
   // FIN BUCLES
 
   &__box {
@@ -184,16 +182,21 @@
   }
 
   &__text {
-    width: $textarea-w;
+    width: 310px;
 
     @media only screen and (min-width:768px) {
-      width: $textarea-w*2;
+      width: 550px;
+    }
+
+    @media only screen and(min-width: 992px) {
+      width: 750px;
     }
   }
 
   &__btn {
     margin-right: 10px;
   }
+  
   label {
     margin: 15px 0px 15px;
   }
